@@ -1,0 +1,411 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+}
+header
+{
+    width: 100%;
+    height: 100vh;
+}
+header nav
+{
+    width: 100vw;
+    height: 100px;
+    background-color: #2d3e52;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+    position: fixed;
+    z-index: 999;
+}
+nav .logo 
+{
+    font-size: 1.7rem;
+    color: white;
+}
+nav ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+}
+nav ul li 
+{
+transition: 1s all;
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+nav ul li:hover
+{
+    background-color: #fd7a07;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+nav .btn1
+{
+    width: 30px;
+    height: 30px;
+    border: none;
+    font-size: 30px;
+    background-color: #2d3e52;
+    display: none;
+}
+header .Hero
+{
+    width: 100%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    background-color: #1cbb9b;
+    color: white;
+    padding-top: 100px;
+}
+.Hero .picture
+{
+    background-color:#e5c3b0;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 50%;
+}
+.Hero img{
+    height: 225px;
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.Hero h1
+{
+    margin-top: 20px;
+
+}
+.line-container
+{
+    display: flex;
+    align-items: center; 
+}
+
+.line-container::before,
+.line-container::after
+{
+    content: "";
+    border: 2px solid ;
+    width: 75px;
+    margin: 30px;
+}
+.star
+{
+    animation: anima 5s linear  infinite normal ;  
+}
+@keyframes anima {
+    0%
+    {
+    transform: translateX(50%);
+    color:orangered;
+    }
+    50%
+    {
+        transform: translateX(100%);
+        color: rgb(18, 29, 234);
+        transform: rotate(-45deg) scale(1.8);
+    }
+    75%
+    {
+        transform: translateX(-50%);
+        color: rgb(214, 41, 165);
+    
+    }
+    100%
+    {
+        transform: translateX(-100%);
+        color: rgb(17, 226, 24);
+        transform: rotate(45deg) scale(1.8);
+    
+    }
+}
+.Hero p
+{
+    font-size: 1.1rem;
+    text-align: center;
+}
+.portfolio,
+.About,
+.Contact
+{
+    width: 100%;
+    margin: 50px 0;
+}
+.portfolio .description,
+.About .description,
+.Contact .description
+{
+    color: #2d3e52;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+.portfolio .card
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.portfolio .card .img
+{
+    width: 350px;
+    height: 250px;
+    text-align: center;
+    padding-top: 30px; 
+    border-radius: 5px;
+}
+.portfolio .card .img:hover {
+    transform: translateY(-15px );
+    box-shadow: 0px 4px 20px 5px rgba(235, 7, 7, 0.8);
+}
+.portfolio .card .img img
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+#img1
+{
+    background-color: #ba4d64;
+}
+#img2
+{
+    background-color: #20a3b5;
+}
+#img3
+{
+    background-color: #140e0e;
+}
+#img4
+{
+    background-color: #1337b2;
+}
+#img5
+{
+    background-color: #1d84c1;
+}
+#img6
+{
+    background-color: #ccb2a3;
+}
+.About
+{
+    background-color: #1cbb9b;
+    color: white;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin: 80px 0;
+}
+.About .description
+{
+    color: aliceblue;
+    width: 100%;
+}
+.About .description-about
+{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    line-height: 30px;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.About .description-about2
+{
+    padding: 0px 0 25px 0;
+}
+.About .btn2 
+{
+    width: 200px;
+    height: 50px; 
+    background-color: #1cbb9b;
+    border:1px solid white;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin: 30px 0;
+}
+.About .btn2 span
+{
+    padding-right: 10px;
+}
+.Contact
+{
+    margin-bottom: 0;
+}
+form
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #c7c8b3;
+}
+form input,
+form textarea
+{
+    border: none;
+    border-bottom: 2px solid #e9e9e9;
+    padding: 20px 0;
+    width: 35%;
+    font-size: 18px;
+    font-size: 1.2rem;
+}
+.Contact form .btn3
+{
+    width: 8%;
+    height: 60px;
+    background-color: #69d3bf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 15px 0 50px -27%;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+footer
+{
+    width: 100%;
+    color: #fff;
+}
+footer .info 
+{
+    width: 100%;
+    background-color:#2d3e52;
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 50px 0 80px 0;
+}
+footer .info .web .link
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .info .web .links
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid  #afcadb;
+    padding-top: 8px;
+    margin: 0 5px;
+}
+
+footer .info h3
+{
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+}
+footer .info span a
+{
+    color: #1cbb9b;
+}
+footer .info .locatton,
+footer .info .web,
+footer .info .Freelance
+{
+    width: 300px;
+}
+footer .copyright
+{
+    width: 100%;
+    height: 70px;
+    background-color: #1c2632;
+    text-align: center;
+    padding-top: 25px;   
+} 
+@media (max-width:992px) 
+{ 
+    nav ul
+    {
+        display: none;
+    }
+
+    nav .btn1
+    {
+        display: block;
+    }
+    header nav
+    {
+        padding: 40px 40px;
+    }
+    .About .description-about2
+    {
+        padding: 0px 0 35px 0;
+    }
+}
+@media (max-width:964px)
+{
+    .About .description-about2
+    {
+        padding: 0px 50px 0px 0;
+    }
+}
+@media (max-width:700px)
+{
+    .Contact form .btn3
+    {
+        font-size: 17px;
+        width: 55px;
+    }
+}
+
+@media (max-width:576px) 
+{
+    .Hero p 
+    {
+        font-size: 16px;
+    }
+    form input,form textarea
+    {
+        font-size: 16px;
+    }
+    .About .description-about2,
+    .About .description-about1
+    {
+        margin: 0px 50px;
+    }
+    .Contact form .btn3
+    {
+        width: 40px;
+        font-size: 14px;
+        height: 50px;
+    }
+}
+
+
+
